@@ -1,0 +1,23 @@
+Se pretende construir un sitio donde se publique la información de lugares para comer dentro de la universidad conteniendo la siguiente información : 
+Breve descripción
+Tipo de comida
+Rango de precios
+Ubicación (en Google maps)
+Comida recomendada 
+Puntuación (otorgada por usuarios)
+Comentarios (de usuarios)
+Imagen
+Entre las funciones a implementar en el sistema están :
+Mostrar el top 10 de los lugares mejor puntuados
+Búsqueda
+Búsqueda avanzada
+Registro de usuarios
+Las funciones de un usuario registrado son :
+Iniciar sesión
+Cerrar sesión
+Comentar
+Puntuar
+Recuperar contraseña
+El administrador del sistema además podrá :
+Editar registro de usuarios, lugares
+Eliminar usuarios, lugares, comentarios
