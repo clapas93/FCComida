@@ -75,6 +75,13 @@ WSGI_APPLICATION = 'FCComida.wsgi.application'
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
 DATABASES = {
+    
+    #Creo que con éstas lineas nos conectamos con postgres
+    'default': {
+        'ENGINE': 'postgresql_psycopg2',
+        ...
+   }
+
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
