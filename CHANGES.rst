@@ -6,3 +6,5 @@ Changelog
 
 - inicio del desarrollo
   [jealuna]
+- conexion con postgres
+	[clapas]
