@@ -82,17 +82,28 @@ WSGI_APPLICATION = 'FCComida.wsgi.application'
 #     }
 # }
 
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'FCComida',
-        'USER': 'FCComida',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '',
+if 'TRAVIS' in os.environ:
+    DATABASES = {
+        'default': {
+            'ENGINE':   'django.db.backends.postgresql_psycopg2',
+            'NAME':     'travisci',
+            'USER':     'postgres',
+            'PASSWORD': '',
+            'HOST':     'localhost',
+            'PORT':     '',
+        }
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql_psycopg2',
+            'NAME': 'FCComida',
+            'USER': 'FCComida',
+            'PASSWORD': 'password',
+            'HOST': 'localhost',
+            'PORT': '',
+        }
+    }
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
