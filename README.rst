@@ -3,6 +3,9 @@ FCComida
 
 .. contents:: :local:
 
+.. image:: https://travis-ci.org/UNAM-FCiencias-TDI/FCComida.svg
+    :target: https://travis-ci.org/UNAM-FCiencias-TDI/FCComida
+
 Instalación
 -----------
 
